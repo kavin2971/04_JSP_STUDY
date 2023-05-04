@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Join</title>
+	<style type="text/css">
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+			color: #333;
+		}
+
+		form {
+			background-color: #fff;
+			padding: 20px;
+			max-width: 600px;
+			margin: 0 auto;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 0;
+			color: #333;
+		}
+
+		label {
+			display: block;
+			margin-top: 10px;
+		}
+
+		input[type="text"],
+		input[type="password"],
+		select {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+
+		.error-message {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<form action="join.jsp" method="post">
+		<h1>Join</h1>
+
+		<label for="username">Username</label>
+		<input type="text" id="username" name="username" required>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" required>
+
+		<label for="confirm-password">Confirm Password</label>
+		<input type="password" id="confirm-password" name="confirmPassword" required>
+
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" required>
+
+		<label for="phone">Phone Number</label>
+		<input type="text" id="phone" name="phone" required>
+
+		<input type="submit" value="Join">
+	</form>
+</body>
+</html>

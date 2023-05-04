@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <form name="regFrm" method="post" action="memberProc.jsp">
         <table border="1">
             <tr>
